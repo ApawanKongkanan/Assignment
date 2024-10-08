@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe6f2; /* พื้นหลังสีชมพูอ่อน */
+}
+
+.login-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px; /* ทำมุมให้โค้งมนขึ้น */
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.3); /* เงาสีชมพู */
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #ff99cc; /* กรอบสีชมพู */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff4d88; /* สีของหัวข้อเป็นสีชมพูเข้ม */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #b30047; /* สีของ label เป็นชมพูเข้ม */
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffb3cc; /* สีกรอบ input เป็นสีชมพู */
+    border-radius: 6px;
+    background-color: #fff0f5; /* พื้นหลัง input เป็นสีชมพูอ่อน */
+}
+
+.toggle-password {
+    cursor: pointer;
+    font-size: 12px;
+    color: #ff6699; /* สีข้อความของการ toggle password */
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d88; /* ปุ่มสีชมพูเข้ม */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button#hello {
+    background-color: #ff66b2; /* ปุ่ม Hello สีชมพูอ่อน */
+}
+
+button:hover {
+    background-color: #ff3377; /* เมื่อ hover จะเข้มขึ้น */
+}
+
+button:disabled {
+    background-color: #ffccd5; /* สีของปุ่มที่ถูก disable */
+}
+
+#message {
+    color: #e60073; /* สีของข้อความ error เป็นสีชมพูเข้ม */
+    text-align: center;
+}
+
