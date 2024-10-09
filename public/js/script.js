@@ -66,3 +66,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     checkInputs();
 });
+
+function togglePassword() {
+    var passwordField = document.getElementById("password");
+    var toggleBtn = document.querySelector(".toggle-password");
+    
+    if (passwordField.type === "password") {
+        passwordField.type = "text";  // เปลี่ยนเป็น text เพื่อแสดงรหัสผ่าน
+        toggleBtn.textContent = "Hide";  // เปลี่ยนข้อความเป็น Hide
+    } else {
+        passwordField.type = "password";  // กลับเป็น password เพื่อซ่อนรหัสผ่าน
+        toggleBtn.textContent = "Show";  // เปลี่ยนข้อความกลับเป็น Show
+    }
+}
