@@ -1,102 +1,80 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    font-family: Arial, sans-serif; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #ffe6f2; 
-    overflow: hidden;
+    background: linear-gradient(to bottom right, #FFD700, #D50000); /* ไล่ระดับสีเหลือง (ทอง) และแดง */
+    overflow: auto; /* เพิ่มการเลื่อน */
     user-select: none; /* ป้องกันการเลือกข้อความ */
 }
 
 .login-container {
     background-color: white;
     padding: 30px; 
-    border-radius: 20px; 
-    box-shadow: 0 0 20px rgba(255, 182, 193, 0.4); 
+    border-radius: 10px; /* มุมโค้งมน */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* เงาเรียบๆ */
     max-width: 400px;
     width: 100%;
-    border: 2px solid #ff99cc; 
-    transition: transform 0.3s ease-in-out; 
-}
-
-.login-container:hover {
-    transform: scale(1.05); /* เทำให้ขยายขึ้นเมื่อ hover */
+    border: 1px solid #8B4513; /* สีน้ำตาลเข้ม */
+    overflow: auto; /* เพิ่มการเลื่อนถ้าจำเป็น */
+    max-height: 90vh; /* ความสูงสูงสุดเพื่อให้สามารถเลื่อน */
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 25px;
-    color: #ff4d88; 
-    font-size: 28px; /* ขนาดใหญ่ขึ้นเพื่อเน้น */
-    font-style: italic; 
+    margin-bottom: 20px;
+    color: #8B4513; /* สีน้ำตาล */
+    font-size: 24px; /* ขนาดพอเหมาะ */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #b30047; 
+    color: #5b3a29; /* สีน้ำตาลเข้ม */
 }
 
 input[type="text"], input[type="password"], select {
     width: 100%;
-    padding: 12px; 
-    margin-bottom: 20px; 
-    border: 1px solid #ffb3cc; 
-    border-radius: 10px; 
-    background-color: #fff0f5; 
-    box-shadow: inset 0 0 5px rgba(255, 182, 193, 0.5); 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #c0c0c0; /* สีกรอบเบาๆ */
+    border-radius: 5px; 
+    background-color: #f9f9f9; /* พื้นหลัง input สีเทาอ่อน */
 }
 
 .toggle-password {
     cursor: pointer;
     font-size: 12px;
-    color: #ff6699; 
+    color: #8B4513; /* สีน้ำตาล */
     margin-bottom: 15px;
     display: inline-block;
-    transition: color 0.2s;
-}
-
-.toggle-password:hover {
-    color: #ff3377; 
 }
 
 button {
     width: 100%;
-    padding: 12px; 
-    background-color: #ff4d88; 
+    padding: 10px; 
+    background-color: #8B4513; /* สีน้ำตาล */
     color: white;
     border: none;
-    border-radius: 10px; 
+    border-radius: 5px; 
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 10px;
-    box-shadow: 0 5px 10px rgba(255, 182, 193, 0.5); 
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-button#hello {
-    background-color: #ff66b2; 
 }
 
 button:hover {
-    background-color: #ff3377; 
-    transform: translateY(-3px); 
+    background-color: #7a3e10; /* สีเมื่อ hover */
 }
 
 button:disabled {
-    background-color: #ffccd5; 
+    background-color: #c8b6a3; /* สีของปุ่มที่ถูก disable */
 }
 
 #message {
-    color: #e60073; 
+    color: #8B4513; /* สีน้ำตาล */
     text-align: center;
     font-size: 14px; 
-    font-style: italic; 
-}
-
-.toggle-password:hover {
-    color: #ff3377; /* เมื่อ hover จะเปลี่ยนสี */
 }
