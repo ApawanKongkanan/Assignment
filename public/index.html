@@ -15,7 +15,6 @@
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
-           <!--<span id="toggle-password" class="toggle-password">Show Password</span> !-->
 
             <label for="role">Select your role:</label>
             <select id="role" name="role" required>
@@ -23,15 +22,24 @@
                 <option value="student">Student</option>
                 <option value="lecturer">Lecturer</option>
             </select>
+
             <span class="toggle-password" onclick="togglePassword()">Show</span>
+
             <button type="button" id="loginBtn" onclick="submitLogin()" disabled>Login</button>
             <button type="button" onclick="call_REST_API_Hello()">Hello</button>
             <p id="message"></p>
+
             <div id="accountInfo" style="margin-top: 20px; display: none;"></div>
-            
         </form>
+
+        <!-- ปุ่ม Logout, Request Form, และ Dashboard -->
+        <div class="extra-buttons" style="margin-top: 20px;">
+            <button type="button" onclick="logout()">Logout</button>
+            <button type="button" onclick="requestForm()">Request Form</button>
+            <button type="button" onclick="dashboard()">Dashboard</button>
+        </div>
     </div>
-    
+
     <script src="js/script.js"></script>
 </body>
 </html>

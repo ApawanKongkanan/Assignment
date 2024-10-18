@@ -78,3 +78,26 @@ button:disabled {
     text-align: center;
     font-size: 14px; 
 }
+/* จัดตำแหน่งปุ่ม Logout, Request Form และ Dashboard */
+.extra-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.extra-buttons button {
+    width: 32%; /* ปรับความกว้างของปุ่ม */
+}
+
+/* ไอคอน Dashboard */
+.dashboard-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dashboard-icon span {
+    font-size: 16px;
+    cursor: pointer;
+    color: #8B4513;
+}
